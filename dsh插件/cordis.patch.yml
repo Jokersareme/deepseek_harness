@@ -1,0 +1,10 @@
+# Automatically compact a completed, idle session when BOTH conditions hold:
+#   - no user/agent activity for idleSeconds (default 20 minutes)
+#   - the measured context has reached at least contextThresholdTokens
+# Change these values in your own profile patch by targeting id: auto-idle-compact.
+- insert:
+    - id: auto-idle-compact
+      name: 'dsh-auto-idle-compact'
+      config:
+        idleSeconds: 1200
+        contextThresholdTokens: 131072

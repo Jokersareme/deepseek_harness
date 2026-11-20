@@ -1,0 +1,13 @@
+{
+  "name": "dsh-auto-idle-compact",
+  "version": "0.1.0",
+  "description": "Automatically compact an idle DSH session after a configurable idle time once its context exceeds a token threshold.",
+  "type": "module",
+  "main": "index.js",
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
